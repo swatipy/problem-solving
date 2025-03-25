@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main {
+public class CountMap {
 
 
     public static void main(String[] args) {
@@ -18,7 +18,7 @@ public class Main {
         Map<Integer, Integer> countMap=new HashMap<>();
 
         for (int num : arr) {
-            // Step 3: Update the count in the map
+            //  Update the count in the map
             if (countMap.containsKey(num)) {
                 countMap.put(num, countMap.get(num) + 1); // Increment count
             } else {
