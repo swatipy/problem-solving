@@ -5,10 +5,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class FrequencyMap {
+public class FrequencyMapper {
 
     /*
-       Frequency Map to store the frequency of all the elements in an array.
+       Frequency Mapper to store the frequency of all the elements in an array.
     */
     public static void main(String[] args) {
 
