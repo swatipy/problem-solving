@@ -1,4 +1,6 @@
-public class EmailNotification implements Notification{
+package com.codes.common;
+
+public class EmailNotification implements Notification {
 
     @Override
     public void sendMessage() {

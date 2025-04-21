@@ -1,16 +1,21 @@
-import java.util.*;
+package com.codes.common;
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class FrequencyMap {
 
-/*
-   Frequency Map to store the frequency of all the elements in an array.
-*/
+    /*
+       Frequency Map to store the frequency of all the elements in an array.
+    */
     public static void main(String[] args) {
 
         int sum = 0;
         List<Integer> arr = Arrays.asList(10, 20, 30, 40, 50, 50);
 
-        for(int i=0; i<arr.size(); i++) {
+        for (int i = 0; i < arr.size(); i++) {
 
             sum = sum + arr.get(i);
 

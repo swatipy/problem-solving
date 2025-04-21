@@ -1,37 +1,35 @@
-package leetcode;
+package com.codes.ps;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
 public class removeDups {
 
 
-    public static void main(String[] args){
-        int[] arr = {0,0,1,2};
+    public static void main(String[] args) {
+        int[] arr = {0, 0, 1, 2};
 
-        Integer res=removeDuplicates(arr);
-        System.out.println("Count"+res);
+        Integer res = removeDuplicates(arr);
+        System.out.println("Count" + res);
 
 
     }
 
 
-
     public static Integer removeDuplicates(int[] nums) {
 
 
-        Map<Integer, Integer> countMap=new HashMap<Integer, Integer>();
+        Map<Integer, Integer> countMap = new HashMap<Integer, Integer>();
 
-        int count=0;
+        int count = 0;
 
-        for (int i=0; i<nums.length;i++){
+        for (int i = 0; i < nums.length; i++) {
 
-            if(countMap.containsKey(nums[i])){
+            if (countMap.containsKey(nums[i])) {
                 continue;
             } else {
                 count++;
-                countMap.put(nums[i],1);
+                countMap.put(nums[i], 1);
             }
 
 // countMap.get();

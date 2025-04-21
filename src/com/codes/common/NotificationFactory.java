@@ -1,11 +1,13 @@
+package com.codes.common;
+
 public class NotificationFactory {
 
-    public Notification getInstance(String str){
-        if(str.equals("SMS"))
+    public Notification getInstance(String str) {
+        if (str.equals("SMS"))
             return new SMSNotification();
-        else if(str.equals("Push"))
+        else if (str.equals("Push"))
             return new PushNotification();
-       else
+        else
             return new EmailNotification();
 
 

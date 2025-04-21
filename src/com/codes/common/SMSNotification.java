@@ -1,3 +1,5 @@
+package com.codes.common;
+
 public class SMSNotification implements Notification {
 
 

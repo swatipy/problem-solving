@@ -1,3 +1,5 @@
+package com.codes.common;
+
 import java.util.Scanner;
 
 public class InputOutput {
@@ -7,7 +9,7 @@ public class InputOutput {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter your name");
         String name = sc.nextLine();
-        System.out.println("Hello "+ name);
+        System.out.println("Hello " + name);
     }
 
 }

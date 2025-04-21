@@ -1,4 +1,4 @@
-package leetcode;
+package com.codes.ps;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,8 +7,7 @@ public class DupAdd {
 
     public static void main(String[] args) {
 
-        int[] nums ={1,2,2,4};
-
+        int[] nums = {1, 2, 2, 4};
 
         List<Integer> l = new ArrayList();
 
@@ -19,9 +18,7 @@ public class DupAdd {
                 l.add(k);
 
             }
-
-
-            k++;
+           k++;
         }
         int[] res = new int[l.size()];
         System.out.print(l);
@@ -29,8 +26,7 @@ public class DupAdd {
             res[i] = l.get(i);
         }
 
-        for(int i=0;i<res.length;i++)
-        {
+        for (int i = 0; i < res.length; i++) {
             System.out.print(res[i]);
         }
     }

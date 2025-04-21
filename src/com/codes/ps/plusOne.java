@@ -1,34 +1,35 @@
-package leetcode;
+package com.codes.ps;
 
 import java.math.BigInteger;
 
 public class plusOne {
 
-public static void main(String[] args){
+    public static void main(String[] args) {
 
-    int[]digits={1,2,3};
+        int[] digits = {1, 2, 3};
 
-    int[] arr =plusOneM(digits);
+        int[] arr = plusOneM(digits);
 
-    for(int i=0; i<arr.length;i++){
+        for (int i = 0; i < arr.length; i++) {
 
 
-        System.out.println(arr[i]);
+            System.out.println(arr[i]);
+
+        }
 
     }
 
-}
     public static int[] plusOneM(int[] digits) {
-        int res=0;
+        int res = 0;
         StringBuilder num = new StringBuilder();
 
-        for(int i=0; i<digits.length;i++){
+        for (int i = 0; i < digits.length; i++) {
 
 
             num.append(digits[i]);
 
         }
-        String strNum=num.toString();
+        String strNum = num.toString();
 
 //        Integer intNum=Integer.valueOf(strNum);
 //        intNum=intNum+1;
@@ -38,11 +39,11 @@ public static void main(String[] args){
         String resStr = String.valueOf(intNum);
         System.out.println(resStr);
 
-        int[] resArr= new int[resStr.length()];
+        int[] resArr = new int[resStr.length()];
 
-        for(int i=0; i<resStr.length();i++){
+        for (int i = 0; i < resStr.length(); i++) {
 
-            resArr[i]= Integer.parseInt(resStr.charAt(i)+"");
+            resArr[i] = Integer.parseInt(resStr.charAt(i) + "");
 
         }
         return resArr;
